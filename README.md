@@ -1,6 +1,5 @@
 #VouDeBikePoa - Mobile Version 
 ===================
-
 Um aplicativo que permite traçar rota entre um ponto de partida e destino utilizando as bicicletas do BikePoa.
 
 De onde eu estiver, poderei pedir para chegar a algum lugar utilizando as bicicletas do BikePoa.
