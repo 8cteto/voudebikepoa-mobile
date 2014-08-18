@@ -21,7 +21,7 @@ Dataset que utilizaremos (se implementadas todas as funcionalidades):
 * [Android SDK Plataform 19] (http://developer.android.com/sdk/installing/index.html)
 
 ## Running
-* Install Apache Cordova `sudo npm install -g cordova`
+* Install [Apache Cordova](http://cordova.apache.org/docs/en/3.5.0/guide_cli_index.md.html#The%20Command-Line%20Interface) `sudo npm install -g cordova`
 * Set Variables: `export PATH=${PATH}:/Development/adt-bundle/sdk/platform-tools:/Development/adt-bundle/sdk/tools`
 * Go to the app folder `cd voudebikepoa-mobile`
 * check 
