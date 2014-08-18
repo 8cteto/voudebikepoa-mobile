@@ -18,7 +18,7 @@ Dataset que utilizaremos (se implementadas todas as funcionalidades):
 * http://datapoa.com.br/dataset/acidentes-de-transito
 
 ## Pre-Requirements
-* Android SDK Plataform 19
+* [Android SDK Plataform 19] (http://developer.android.com/sdk/installing/index.html)
 
 ## Running
 * Install Apache Cordova `sudo npm install -g cordova`
