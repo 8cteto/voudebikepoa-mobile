@@ -22,9 +22,13 @@ Dataset que utilizaremos (se implementadas todas as funcionalidades):
 
 ## Running
 * Install [Apache Cordova](http://cordova.apache.org/docs/en/3.5.0/guide_cli_index.md.html#The%20Command-Line%20Interface) `sudo npm install -g cordova`
-* Set Variables: `export PATH=${PATH}:/Development/adt-bundle/sdk/platform-tools:/Development/adt-bundle/sdk/tools`
-* Go to the app folder `cd voudebikepoa-mobile`
 * Make sure you have installed the latest [Android SDK](http://developer.android.com/sdk/installing/index.html)
+* Set Variables: `export PATH=${PATH}:_PATH-ANDROID-SDK_/platform-tools:_PATH-ANDROID-SDK_/tools`
+* Test your environment running:
+* `cordova help`
+* `android help`
+* `adb help`
+* Go to the app folder `cd voudebikepoa-mobile`
 * Run `cordova build`
 * Run `cordova emulate android` to load android emulator
 * Enjoy ;-)
