@@ -19,8 +19,10 @@
 
 package br.com.voudebikepoa;
 
+import org.apache.cordova.Config;
+import org.apache.cordova.CordovaActivity;
+
 import android.os.Bundle;
-import org.apache.cordova.*;
 
 public class VouDeBikePOA extends CordovaActivity 
 {
@@ -29,9 +31,7 @@ public class VouDeBikePOA extends CordovaActivity
     {
         super.onCreate(savedInstanceState);
         super.init();
-        // Set by <content src="index.html" /> in config.xml
-        super.loadUrl(Config.getStartUrl());
-        //super.loadUrl("file:///android_asset/www/index.html");
+		super.loadUrl(Config.getStartUrl());
     }
 }
 

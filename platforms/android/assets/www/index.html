@@ -29,16 +29,28 @@
     </head>
     <body>
         <div class="app">
-            <h1>#VouDeBikePOA</h1>
+            <h1>Apache Cordova</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
-                <p class="event received">Vou de Bike Poa</p>
+                <p class="event received">Device is Ready</p>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize();
+     // Wait for Cordova to load
+        //
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // Cordova is ready
+        //
+        function onDeviceReady() {
+             var ref = window.open('http://www.voudebikepoa.com.br', '_blank', 'location=yes');
+             ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+             ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+             ref.addEventListener('exit', function() { alert(event.type); });
+        }
+
         </script>
     </body>
 </html>
