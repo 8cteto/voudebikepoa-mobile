@@ -6,16 +6,16 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#FFFFFF;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-color:##006FA0;
+    background-image:linear-gradient(top, #006FA0 0%, #006FA0 51%);
+    background-image:-webkit-linear-gradient(top, #006FA0 0%, #006FA0 51%);
+    background-image:-ms-linear-gradient(top, #006FA0 0%, #006FA0 51%);
     background-image:-webkit-gradient(
         linear,
         left top,
         left bottom,
-        color-stop(0, #FFFFFF),
-        color-stop(0.51, #FFFFFF)
+        color-stop(0, ##006FA0),
+        color-stop(0.51, ##006FA0)
     );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
@@ -64,8 +64,9 @@ h1 {
     -webkit-border-radius:4px;
     color:#000000;
     font-size:12px;
-    margin:0px 30px;
+    margin:0px 20px;
     padding:2px 0px;
+    font-weight: bold;
 }
 
 .event.listening {
@@ -74,13 +75,14 @@ h1 {
 }
 
 .event.received {
-    background-color:#FFFFFF;
+    background-color:#000111;
     display:none;
 }
 
 .social-links {
     text-align: center;
     margin-top: 9em;
+    color:#FFFFFF;
 }
 
 @keyframes fade {

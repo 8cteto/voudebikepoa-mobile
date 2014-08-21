@@ -10,11 +10,14 @@
     <content src="index.html" />
     <access origin="*" />
     
+    <icon src="www/res/logo_voudebikepoa.png"/>
+
     <platform name="android">
           <icon src="www/res/logo_voudebikepoa.png" density="ldpi" />
           <icon src="www/res/logo_voudebikepoa.png" density="mdpi" />
           <icon src="www/res/logo_voudebikepoa.png" density="hdpi" />
           <icon src="www/res/logo_voudebikepoa.png" density="xdpi" />
+          <icon src="www/res/logo_voudebikepoa.png" density="xxdpi" />
      </platform>
         />
 </widget>
