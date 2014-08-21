@@ -1,12 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="br.com.voudebikepoa" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>VouDeBikePOA</name>
+    <name>VDB POA</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Escolha seu destino e diremos a você como ir de bike utilizando o BikePoa!
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="voudebike-poa@googlegroups.com" href="http://voudebikepoa.com">
+        Equipe Vou de Bike POA!
     </author>
     <content src="index.html" />
     <access origin="*" />
+    
+    <platform name="android">
+          <icon src="www/res/logo_voudebikepoa.png" density="ldpi" />
+          <icon src="www/res/logo_voudebikepoa.png" density="mdpi" />
+          <icon src="www/res/logo_voudebikepoa.png" density="hdpi" />
+          <icon src="www/res/logo_voudebikepoa.png" density="xdpi" />
+     </platform>
+        />
 </widget>
