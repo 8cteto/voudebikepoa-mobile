@@ -81,8 +81,10 @@ h1 {
 
 .social-links {
     text-align: center;
-    margin-top: 9em;
+    margin-top: 30%;
+    margin-left: 20%;
     color:#FFFFFF;
+    float:left;
 }
 
 @keyframes fade {
