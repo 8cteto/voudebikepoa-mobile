@@ -59,14 +59,21 @@ h1 {
     text-align:center;
 }
 
+.pedaling{
+    float:left;
+    margin:100px 0px 0px -180px;
+}
+
 .event {
     border-radius:4px;
     -webkit-border-radius:4px;
     color:#000000;
     font-size:12px;
-    margin:0px 20px;
-    padding:2px 0px;
+    margin-top: 5%;
+    margin-left: 20%;
+    padding:5px 5px;
     font-weight: bold;
+    width:130px;
 }
 
 .event.listening {
@@ -80,11 +87,10 @@ h1 {
 }
 
 .social-links {
-    text-align: center;
-    margin-top: 30%;
-    margin-left: 20%;
-    color:#FFFFFF;
     float:left;
+    text-align: center;
+    color:#FFFFFF;
+    margin: 200px 0px 0px -150px;
 }
 
 @keyframes fade {
