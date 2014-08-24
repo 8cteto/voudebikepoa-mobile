@@ -1,0 +1,114 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:##006FA0;
+    background-image:linear-gradient(top, #006FA0 0%, #006FA0 51%);
+    background-image:-webkit-linear-gradient(top, #006FA0 0%, #006FA0 51%);
+    background-image:-ms-linear-gradient(top, #006FA0 0%, #006FA0 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, ##006FA0),
+        color-stop(0.51, ##006FA0)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app {
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:50px;                   /* text area height */
+    width:225px;                   /* text area width */
+    text-align:center;
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.pedaling{
+    float:left;
+    position:absolute;             /* position in the center of the screen */
+    left:7%;
+    top:80%;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#000000;
+    font-size:12px;
+    margin-top: 5%;
+    margin-left: 20%;
+    padding:5px 5px;
+    font-weight: bold;
+    width:130px;
+}
+
+.event.listening {
+    background-color:#E4E4E4;
+    display:block;
+}
+
+.event.received {
+    background-color:#000111;
+    display:none;
+}
+
+.social-links {
+    position:absolute;             /* position in the center of the screen */
+    left:22%;
+    top:130%;
+    text-align: center;
+    color:#FFFFFF;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
