@@ -61,7 +61,9 @@ h1 {
 
 .pedaling{
     float:left;
-    margin:100px 0px 0px -180px;
+    position:absolute;             /* position in the center of the screen */
+    left:7%;
+    top:80%;
 }
 
 .event {
@@ -87,10 +89,11 @@ h1 {
 }
 
 .social-links {
-    float:left;
+    position:absolute;             /* position in the center of the screen */
+    left:22%;
+    top:130%;
     text-align: center;
     color:#FFFFFF;
-    margin: 200px 0px 0px -150px;
 }
 
 @keyframes fade {
