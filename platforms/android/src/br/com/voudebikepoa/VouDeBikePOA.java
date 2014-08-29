@@ -22,6 +22,8 @@ package br.com.voudebikepoa;
 import org.apache.cordova.Config;
 import org.apache.cordova.CordovaActivity;
 
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 
 public class VouDeBikePOA extends CordovaActivity 
@@ -31,7 +33,17 @@ public class VouDeBikePOA extends CordovaActivity
     {
         super.onCreate(savedInstanceState);
         super.init();
-		super.loadUrl(Config.getStartUrl());
+    }
+    
+    @Override
+    protected void onResume() {
+    	super.onResume();
+    	ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected())
+	        super.loadUrl(Config.getStartUrl());
+        else
+        	super.loadUrl(Config.getNoConnectionErrorUrl());
     }
 }
 

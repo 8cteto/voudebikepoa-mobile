@@ -235,4 +235,8 @@ public class Config {
     public static String getErrorUrl() {
         return errorUrl;
     }
+    
+    public static String getNoConnectionErrorUrl() {
+    	return "file:///android_asset/www/no_connection_error.html";
+    }
 }
